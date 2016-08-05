@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Change Calculator</title>
+    <!-- bootstrap css -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+</head>
+	<body>
+		<form class="background form-group lead m-b-3" role="form" action="index.html" method="post">
+			<div class="container m-t-2">
+				<div class="text-xs-center">
+					<h1>Change Calculator</h1>
+				</div>
+				<div class="m-t-2 bg-info text-xs-center" id="inputSection" style="color:grey">
+					<label>How much is due for the sale?</label>
+					<!--  the total amount of the sale  -->
+					<input type="number" min="0.01" step="0.01" class="form-control" id="saleInput" step="0.01">	
+
+					<label>How much has the customer given you?</label>
+					<!--  the amount tendered by customer -->
+					<input type="number" min="0.01" step="0.01" class="form-control" id="customerInput">	
+				</div>
+				
+				<div class="change-bkgd m-t-2 m-b-2 text-xs-center" id="dollar">
+					<!-- calculate the amount of change due in dollars.	 -->	
+					<label>Dollars</label>
+					<p type="text" id="dollarAmount">0</p>				
+				</div>
+				
+				<div class="change-bkgd nopadding row m-t-2 m-b-2 text-xs-center" id="coins">
+					<!-- calculate the amount of change due in quarters, dimes, nickels and pennies.	 -->
+					<div class="col-xs-6 col-md-3">
+						<label>Quarters</label>
+						<p type="text" name="quarters" id="quarterAmount">0</p>
+					</div>
+					
+					<div class="col-xs-6 col-md-3">
+						<label>Dimes</label>
+						<p type="text"name="dimes" id="dimeAmount">0</p>
+					</div>
+
+					<div class="col-xs-6 col-md-3">
+						<label>Nickels</label>
+						<p type="text" name="nickelOutput" id="nickelAmount">0</p>
+					</div>	
+					
+					<div class="col-xs-6 col-md-3">
+						<label>Pennies</label>
+						<p type="text" name="pennyOutput" id="pennyAmount">0</p>
+					</div>	
+
+				</div>
+
+				<div class="text-xs-center m-t-1">
+					<button class="btn btn-primary" type="button" id="btnCalculate">Calculate</button>
+				</div>	
+			</div>
+		</form>
+
+	<!-- jQuery first, then bootstrap js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<!-- 	Tether for Bootstrap --> 
+	<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<!-- Reference index.js before </body> tag -->
+    <script src="index.js"></script> 
+
+	</body>
+</html>

@@ -1,0 +1,13 @@
+.background {
+	background: #f2f2f1;
+}
+
+.change-bkgd {
+	background: #5bc0de;
+	color: white;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
