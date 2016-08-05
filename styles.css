@@ -1,5 +1,6 @@
 .background {
 	background: #f2f2f1;
+	padding: 25px;
 }
 
 .change-bkgd {
@@ -11,3 +12,4 @@
    padding: 0 !important;
    margin: 0 !important;
 }
+
